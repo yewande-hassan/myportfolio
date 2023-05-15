@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { CountUp } from 'use-count-up'
+// import { CountUp } from 'use-count-up'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 
@@ -41,7 +41,7 @@ export default function Home() {
             </div>
           </h1>
           <div className={styles.counter}>
-            <CountUp isCounting end={100} duration={3} />%
+            {/* <CountUp isCounting end={100} duration={3} />% */}
           </div>
         </div>
       )}
