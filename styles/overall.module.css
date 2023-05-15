@@ -1,0 +1,178 @@
+.link{
+    position: relative;
+    font-family: montrealRegular;
+    opacity: 0.7;
+    font-size: 1.2rem;
+}
+.link:hover{
+    opacity: 1;
+}
+.link::after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #E8FEFA;
+    left: 0;
+    bottom: 0;
+    transition: all 0.3s ease-in-out;
+    /* border-style: ; */
+}
+
+.link:hover::after {
+    width: 100%;
+}
+.header{
+    font-family: 'Bebas Neue', cursive;
+}
+.aboutContainer{
+    font-family: montrealRegular;
+    line-height: 35px; 
+}
+.aboutGrid{
+    font-size: 14px;
+}
+.stack {
+    border: 1px solid #101010;
+    box-shadow: 0px 5px 10px #101010;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.8s ease-in-out;
+    opacity: 0.8;
+    background: #e8fefa4d;
+    padding-top: 10px;
+}
+
+.stack:hover {
+    scale: 1.05;
+    opacity: 1;
+    box-shadow: 0px 5px 15px #101010;
+}
+
+.stackTitle {
+    font-size: 0.9rem;
+    font-family: montrealRegular;
+}
+
+.stackText {
+    text-align: center;
+    margin-block: 30px 100px;
+    font-family: montrealRegular;
+}
+.animateImage{
+    filter: brightness(0.8);
+    opacity: 0.3; 
+}
+.works {
+    opacity: 0.8;
+    border: 1px solid #e8fefa8d;
+    transition: all 0.8s ease-in-out;
+    cursor: pointer;
+}
+
+.works:hover {
+    scale: 1.05;
+    opacity: 1;
+    color: #E8FEFA;
+    border: none;
+    box-shadow: 0px 5px 15px #101010;
+}
+.text{
+    font-family: montrealRegular;
+}
+.links{
+    font-weight: 900;
+    font-family: montrealRegular;
+    text-decoration: underline;
+}
+.para{
+    cursor: pointer;
+    display: inline;
+}
+.input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px white solid;
+    width: 100%;
+    margin-block: 40px;
+    color: white;
+}
+
+  .inputField {
+    font-family: montrealRegular;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px white solid;
+    width: 100%;
+    color: #E8FEFA;
+    font-size: 1.1rem;
+    position: relative;
+    z-index: 1;
+    padding-block: 10px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset;
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  .inputField:invalid {
+    outline: 0;
+    background: transparent;
+}
+.inputField:focus,
+.inputField:valid {
+    border-color: #E8FEFA;
+}
+.inputField:focus~label,
+.inputField:valid~label {
+    font-size: 16px;
+    top: -30px;
+    color: #E8FEFA;
+}
+  .inputFieldFocused {
+    outline: none;
+    margin-block: 5px;
+  }
+  .inputField::placeholder {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .inputFieldFocused::placeholder,
+  .inputField:not(:placeholder-shown)::placeholder {
+    top: 0;
+    left: 10px;
+    transform: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+  }
+.shoot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    border: none;
+    background: #171717;
+    color: #E8FEFA;
+    cursor: pointer;
+    width: 10px;
+}
+.shootp{
+    transform: rotate(270deg);
+    font-size: 32px;
+    font-weight: 900;
+    font-family: montrealRegular;
+}
