@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import profilePic from '../../public/images/myPicture.jpeg'
-import Typed from 'react-typed';
+// import Typed from 'react-typed';
 import style from '../../styles/Home.module.css'
 import {IoMdWifi} from 'react-icons/io'
 import {MdPortableWifiOff} from 'react-icons/md'
@@ -47,13 +47,7 @@ const [offline, setOffline] = useState(false)
             WANDE DEV
             </h1>
           <div>
-            <Typed
-              strings={[
-                "Software Engineer, Frontend Engineer and a Tech-Savy . . .",
-              ]}
-              typeSpeed={40}
-              className={style.typedText}
-            />
+          <p>Software Engineer, Frontend Engineer and a Tech-Savy . . .</p>
           </div>
         </div>
       </div>
