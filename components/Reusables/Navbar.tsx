@@ -35,7 +35,7 @@ export const Navbar = () => {
           {isMenuOpen ? <BsX /> : <FaBars />}
         </button>
         { isMenuOpen &&
-        <div className={isMenuOpen ? ' md:hidden w-[100%] bg-white text-black h-full flex flex-col fixed top-[12vh] left-0 gap-[40px] ease-in-out duration-4500' : 'left-[-100%] ease-in-out duration-4500 fixed'}>
+        <div className={isMenuOpen ? ' md:hidden w-[100%] bg-white text-black h-full flex flex-col fixed top-[12vh] left-0 gap-[40px] ease-in-out duration-4500' : 'left-[-100%] ease-in-out duration-3500 fixed'}>
         <div className='flex flex-col items-center w-[100%]'>
           <Link href='#hero' scroll={true} className={styles.link}>Home</Link>
           <Link href='#about'  scroll={true} className={styles.link}>About</Link>
