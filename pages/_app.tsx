@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import Head from 'next/head';
-import { AnimatePresence } from 'framer-motion';
+// import { AnimatePresence } from 'framer-motion';
 interface Props{
   children:any
   Layout: React.FC<any>;
@@ -13,14 +13,14 @@ export default function App({ Component, pageProps }: AppProps) {
     <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
     </Head>
-    <AnimatePresence 
+    {/* <AnimatePresence 
       mode="wait" 
       initial={false}
-      onExitComplete={() => window.scrollTo(0, 0)}>
+      onExitComplete={() => window.scrollTo(0, 0)}> */}
   <Layout>
   <Component {...pageProps} />
   </Layout>
-  </AnimatePresence>
+  {/* </AnimatePresence> */}
   </>
   )
 }
