@@ -8,7 +8,7 @@ export const Projects = () => {
   return (
     <div id='works' className='w-[100%]'>
         <div className ='flex flex-col items-center justify-start'>
-            <h1 className={`text-[4rem] mb-[100px] tracking-wide ${style.header}`}>Projects</h1>
+            <h1 className={`md:text-[4rem] text-[2rem] md:mb-[100px] my-[50px] tracking-wide ${style.header}`}>Projects</h1>
             {data.map((work) => 
             <div key={work.id} className={`flex justify-between items-start h-[200px] py-[30px] px-[50px] w-[90%] ${style.works}`}>
                 <div className ='flex flex-col items-start gap-[30px]'>

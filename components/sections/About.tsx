@@ -15,15 +15,15 @@ export const About = () => {
     <div
       id="about"
     >
-      <div className={`${style.aboutContainer} p-[100px]`}>
+      <div className={`${style.aboutContainer} md:p-[100px] p-[30px]`}>
         <h1
-          className={`flex items-center justify-center m-[100px] text-[64px] tracking-wide ${style.header}`}
+          className={`flex items-center justify-center md:m-[100px] m-[50px] md:text-[4rem] text-[2rem] tracking-wide ${style.header}`}
         >
           Meet Me
         </h1>
 
         <div
-          className={`grid grid-cols-3 place-items-center w-[100%] ${style.aboutGrid}`}
+          className={` grid md:grid-cols-3 lg:grid-cols-3 md:place-items-center w-[100%] text-[10px] ${style.aboutGrid}`}
         >
           <div className='w-[100%]'>
             <div 
@@ -51,7 +51,7 @@ export const About = () => {
           </div>
           <div>
             <Image
-              className={style.animateImage}
+              className={`hidden md:block ${style.animateImage}`}
               src={devFocus}
               alt="animation"
               width={300}
@@ -85,7 +85,7 @@ export const About = () => {
         <div
         className='flex mt-[30px] flex-col justify-center items-center'
         >
-          <p className='mb-[30px] text-[2.5rem]'>
+          <p className='mb-[30px] text-[1.5rem] md:text-[2.5rem]'>
             My Stack!
           </p>
           <div className={`flex gap-[20px] flex-wrap ${style.stacks}`}>
@@ -125,13 +125,13 @@ export const About = () => {
               <h4 className={style.stackTitle}>Github</h4>
             </div>
           </div>
-          <p className={style.stackText}>
+          <p className={`text-[12px] my-[20px] md:mt-[30px] md:mb-[100px] ${style.stackText}`}>
             I am excited to further develop my skills and create innovative
             solutions that make a difference.
           </p>
           <div className='w-[80%] border-2 border-[#E8FEFA]'>
             </div>
-          <p className={style.stackText}>ENOUGH TALK 🤫, TIME TO SEE WHAT I’VE BUILT.</p>
+          <p className={`text-[12px] ${style.stackText}`}>ENOUGH TALK 🤫, TIME TO SEE WHAT I’VE BUILT.</p>
         </div>
       </div>
     </div>

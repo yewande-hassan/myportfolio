@@ -14,15 +14,17 @@ export const Navbar = () => {
   }
   return (
     <nav className='h-[12vh] flex justify-between items-center'>
-      <div className={`w-full flex justify-between items-center px-[30px] md:px-[100px] py-[25px]`}>
+      <div className={`w-full flex justify-between items-center px-[20px] md:px-[100px] py-[25px] overflow-x-hidden`}>
       <h1 className='md:text-[2.5rem] text-[2rem]'>
-        <Link href='/'>WendyCodes</Link>
+        <Link href='/'>Wande Dev.</Link>
         </h1>
         <div className='hidden md:flex gap-[40px] items-center'>
           <Link href='#hero' scroll={true} className={styles.link}>Home</Link>
           <Link href='#about'  scroll={true} className={styles.link}>About</Link>
           <Link href='#works' scroll={true} className={styles.link}>Works</Link>
           <Link href='#contact' className={styles.link}>Contact</Link>
+          </div>
+          <div className='hidden md:flex gap-[40px] items-center'>
           <Link href='https://www.linkedin.com/in/hassanyewande/' target="_blank"><FaLinkedin/></Link>
           <Link href='https://github.com/yewande-hassan' target="_blank"><BsGithub/></Link>
           </div>

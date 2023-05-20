@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { CountUp } from 'use-count-up'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
+import CountingAnimation from '../components/countUp'
 
 export default function Home() {
   const router = useRouter()
@@ -11,7 +11,7 @@ export default function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowLandingPage(false);
-    }, 3000);
+    }, 2500);
 
     return () => clearTimeout(timer);
   }, []);
@@ -41,7 +41,8 @@ export default function Home() {
             </div>
           </h1>
           <div className={styles.counter}>
-            <CountUp isCounting end={100} duration={3} />%
+            {/* <CountUp isCounting end={100} duration={3} /> */}
+           <CountingAnimation/>%
           </div>
         </div>
       )}

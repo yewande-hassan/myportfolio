@@ -9,21 +9,20 @@ export const Footer = () => {
     <footer>
         <div className={style.headFooter}>
         <div
-          className='flex justify-between items-center px-[100px] h-[12vh]'
+          className='flex flex-col md:flex-row justify-between items-center md:px-[100px] px-[20px] h-[12vh]'
         >
           <div
             className='flex items-center text-[12px] gap-[10px] flex-col'
           >
-            <p className={`${style.header} text-[1.5rem] tracking-wider`}>LET&apos;S CONNECT</p>
-            <div className='flex flex-row justify-between gap-[20px]'>
-            <Link href='https://wa.me/2348158140795' target="_blank" className={style.link}>Whatsapp</Link>
-            <Link href='https://github.com/yewande-hassan' target="_blank" className={style.link}>Instagram</Link>
-            <Link href='https://twitter.com/WendyCode' target="_blank" className={style.link}>Twitter</Link>
-
+            <p className={`${style.header} md:text-[2rem] text-[16px] py-[10px] tracking-wider`}>LET&apos;S CONNECT</p>
+            <div className='flex flex-col md:flex md:flex-row gap-[20px]'>
+            <Link href='https://wa.me/2348158140795' target="_blank" className={`${style.footerLink} cursor-pointer`}>Whatsapp</Link>
+            <Link href='https://github.com/yewande-hassan' target="_blank" className={`${style.footerLink} cursor-pointer`}>Instagram</Link>
+            <Link href='https://twitter.com/WendyCode' target="_blank" className={`${style.footerLink} cursor-pointer`}>Twitter</Link>
             </div>
           </div>
-          <div className='flex gap-[20px] text-[12px] opacity-[0.7] items-center'>
-            <p className={style.link}>Developed by <Link href='/'>Yewande Hassan👌🏽</Link></p>
+          <div className='flex gap-[20px] opacity-[0.7] items-center'>
+            <p className={`text-[10px] md:text-[12px] py-[10px] ${style.footerLink}`}>Developed by <Link href='/'>Yewande Hassan👌🏽</Link></p>
           </div>
         </div>
       </div>

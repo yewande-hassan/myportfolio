@@ -81,15 +81,15 @@ export const Contact = ({placeholders}:InputFieldProps) => {
         className='flex flex-col items-center justify-start'
       >
         <h1
-          className={`text-[4rem] m-[8rem] tracking-wide ${style.header}`}
+          className={`md:text-[4rem] text-[2rem] md:m-[8rem] m-[3rem] tracking-wide ${style.header}`}
         >
           Get In Touch
         </h1>
-        <p className={style.text}>
+        <p className={`px-[20px] text-[0.9rem] ${style.text}`}>
           Contact me if you&apos;ve got remote job opportunities, website / app
           development gigs, collaborations or you just want to say hello 👋
         </p>
-        <p className={`my-[2rem] ${style.text}`}>
+        <p className={`md:my-[2rem] my-[1rem] px-[20px] text-[0.9rem] ${style.text}`}>
           You can send me an <Link className={`underline underline-offset-4 ${style.para}`} href={`mailto:${email}`} target="_blank">email</Link> if contact forms
           aren&apos;t your thing.
         </p>
@@ -99,12 +99,12 @@ export const Contact = ({placeholders}:InputFieldProps) => {
               <p className={style.text}>{alertMessage}</p>
             </div>
           )}
-        <form onSubmit={handleSubmit(onSubmit)} className='my-[4rem] p-[30px] rounded-lg bg-[#171717] flex w-[100%]'>
+        <form onSubmit={handleSubmit(onSubmit)} className='my-[4rem] p-[30px] rounded-lg bg-[#171717] flex flex-col w-[100%] max-w-[500px] md:max-w-[600px]'>
             <div
               className='flex flex-col gap-[60px] justify-start'
              >
         <div
-        className='w-[90%]'>
+        className='w-full'>
         <input
           id='name'
           type='text'
@@ -124,7 +124,7 @@ export const Contact = ({placeholders}:InputFieldProps) => {
         </p>
         </div>
         <div 
-        className='w-[90%]'>
+        className='w-full'>
         <input
           id='email'
           type='email'
@@ -143,7 +143,7 @@ export const Contact = ({placeholders}:InputFieldProps) => {
         </p>
         </div>
         <div
-        className='w-[90%]'
+        className='w-full'
         >
         <textarea   
         className={`${style.inputField} ${inputFocused[3] ? style.inputFieldFocused : "" }`} 
@@ -158,10 +158,11 @@ export const Contact = ({placeholders}:InputFieldProps) => {
 
         </div>
         <div
-        className='flex flex-col items-center justify-evenly'
+        className='flex items-center justify-evenly'
         >
-        <button type='submit' disabled={isSubmitting} className={`bg-transparent border-none ${style.shoot}`}><BsArrowUp className='text-[3rem]'/></button>
-        <p className={style.shootp}>Shoot!</p>
+        <button type='submit' disabled={isSubmitting} className={`bg-[#F36F48] border-2-[#F36F48] cursor-pointer rounded-lg p-[10px] px-[20px] my-[20px]`}>
+          Shoot!
+          </button>
         </div>
       
         </form>

@@ -15,7 +15,42 @@
   font-family: montrealLight;
   src: url(../public/Fonts/neue-montreal-free-demo-pangram-pangram-030418/NeueMontreal-Light.otf);
 }
-
+@font-face{
+  font-family: montrealLight;
+  src: url(../public/Fonts/neue-montreal-free-demo-pangram-pangram-030418/NeueMontreal-Light.otf);
+}
+@font-face{
+  font-family: LemonMilk-Bold;
+  src: url(../public/Fonts/lemon_milk/LEMONMILK-Bold.otf);
+}
+@font-face{
+  font-family: LemonMilk-BoldItalics;
+  src: url(../public/Fonts/lemon_milk/LEMONMILK-BoldItalic.otf);
+}
+@font-face{
+  font-family: LemonMilk-Light;
+  src: url(../public/Fonts/lemon_milk/LEMONMILK-Light.otf);
+}
+@font-face{
+  font-family: LemonMilk-LightItalics;
+  src: url(../public/Fonts/lemon_milk/LEMONMILK-LightItalic.otf);
+}
+@font-face{
+  font-family: LemonMilk-Medium;
+  src: url(../public/Fonts/lemon_milk/LEMONMILK-Medium.otf);
+}
+@font-face{
+  font-family: LemonMilk-MediumItalics;
+  src: url(../public/Fonts/lemon_milk/LEMONMILK-MediumItalic.otf);
+}
+@font-face{
+  font-family: LemonMilk-Regular;
+  src: url(../public/Fonts/lemon_milk/LEMONMILK-Regular.otf);
+}
+@font-face{
+  font-family: LemonMilk-RegularItalics;
+  src: url(../public/Fonts/lemon_milk/LEMONMILK-RegularItalic.otf);
+}
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -38,7 +73,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-    font-family: Kaldera;
+    font-family: LemonMilk-Medium;
     
     background: #0f0f0f;
     color: #E8FEFA;
