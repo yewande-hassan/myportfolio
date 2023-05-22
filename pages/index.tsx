@@ -32,16 +32,15 @@ export default function Home() {
     <main
     >
       {showLandingPage && (
-        <div className={styles.animatedScreen}>
+        <div className={`${styles.animatedScreen}`}>
           <h1>
-            <span>Software</span>
+            <span className='text-[20px] ml-[40px]'>Software</span>
             <div className={styles.message}>
               <div className={styles.word1}>Engineer</div>
               <div className={styles.word2}>Developer</div>
             </div>
           </h1>
           <div className={styles.counter}>
-            {/* <CountUp isCounting end={100} duration={3} /> */}
            <CountingAnimation/>%
           </div>
         </div>

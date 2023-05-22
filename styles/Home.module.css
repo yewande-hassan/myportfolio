@@ -11,20 +11,15 @@
     /* color: inherit; */
     color:'#fff';
     font-family: tahoma;
-    font-size: 3rem;
     font-weight: 100;
     line-height: 1.5;
     text-transform: uppercase;
     white-space: nowrap;
     overflow: hidden;
     position: relative;
-    width: 600px;
+    width: 300px;
   }
   
-  .animatedScreen h1 span {
-    font-size: 40px;
-    margin-left: 40px;
-  }
   
   .message {
     background-color: #E8FEFA;
@@ -35,7 +30,7 @@
     position: absolute;
     padding-left: 0.5rem;
     top: 0.2rem;
-    left: 260px;
+    left: 150px;
     animation: openclose 5s ease-in-out infinite;
   }
   
@@ -52,11 +47,13 @@
       width: 0;
     }
     15% {
-      width: 400px;
+      /* width: 400px; */
+      width: 200px;
     }
     30% {
       top: 0.2rem;
-      width: 400px;
+      /* width: 400px; */
+      width: 200px;
     }
     33% {
       top: 0.2rem;
@@ -71,12 +68,15 @@
       
     }
     48% {
-      top: -4.5rem;
-      width: 400px;
+      /* top: -4.5rem; */
+      top:-1.2rem;
+      /* width: 400px; */
+      width: 300px;
     }
     62% {
-      top: -4.5rem;
-      width: 400px;
+      top: -1.2rem;
+      /* width: 400px; */
+      width: 300px;
     }
     66% {
       top: -4.5rem;
@@ -133,10 +133,6 @@
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: 0.15em; /* Adjust as needed */
-    /* animation: 
-      typing 1.5s steps(150, end),
-      blink-caret .75s step-end infinite;
-  } */
   animation: typing 1.5s steps(40, end),
   blink-caret 0.75s step-end infinite;
  
@@ -165,3 +161,58 @@
   #counting-effect {
     animation: counting 3s;
   }
+@media screen and (min-width: 480px){
+    .animatedScreen h1 span {
+    font-size: 40px;
+    margin-left: 40px;
+  }
+  .animatedScreen h1{
+    font-size: 3rem;
+    width: 600px;
+  }
+    @keyframes openclose {
+    0% {
+      top: 0.2rem;
+      width: 0;
+    }
+    5% {
+      width: 0;
+    }
+    15% {
+      width: 400px;
+    }
+    30% {
+      top: 0.2rem;
+      width: 400px;
+    }
+    33% {
+      top: 0.2rem;
+      width: 0;
+    }
+    35% {
+      top: 0.2rem;
+      width: 0;
+    }
+    38% {
+      top: -4.5rem;
+      
+    }
+    48% {
+      top: -4.5rem;
+      width: 400px;
+    }
+    62% {
+      top: -4.5rem;
+      width: 400px;
+    }
+    66% {
+      top: -4.5rem;
+      width: 0;
+      text-indent: 0;
+    }
+  
+  }
+  .message{
+    left:250px;
+  }
+}

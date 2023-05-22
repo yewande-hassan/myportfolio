@@ -29,7 +29,7 @@ export const Hero:any = () => {
     }, [time])
   return (
     <div
-    className='md:h-[88vh] flex flex-col w-full px-[30px]'
+    className='md:h-[88vh] flex flex-col w-full h-[70vh] px-[30px]'
       id='hero' 
     >
       <div className='md:flex-col lg:flex lg:flex-row md:justify-start m-auto items-center md:py-[40px] lg:py-[70px] md:gap-[50px]'
@@ -52,12 +52,12 @@ export const Hero:any = () => {
       </div>
       <div className='w-[100%] border-solid border border-[#E8FEFA]' />
       <div className={style.headFooter}>
-        <div className='flex items-center md:px-[100px] h-[12vh] justify-between'
+        <div className='flex items-center md:px-[100px] h-[5vh] md:h-[12vh] justify-between'
         >
           <div 
             className={`flex gap-[10px] items-center ${offline ? "opacity-100" : "opacity-50"}`}
           >
-            {offline ? <IoMdWifi className='text-[0.5rem] md:text-[1rem]'/> : <MdPortableWifiOff className='text-[1.5rem]'/>}
+            {offline ? <IoMdWifi className='text-[0.5rem] md:text-[1rem]'/> : <MdPortableWifiOff className='text-[0.5rem] md:text-[1rem]'/>}
             <p className='text-[0.5rem] md:text-[1rem]'> Wande is {offline ? "ONLINE" : "OFFLINE"}</p>
           </div>
           <div className='flex gap-[20px] text-[12px] opacity-[0.7]'>

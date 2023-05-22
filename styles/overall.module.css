@@ -79,8 +79,9 @@
 
 .works:hover {
     scale: 1.05;
-    opacity: 1;
-    color: #E8FEFA;
+    background: #E8FEFA;
+    opacity: 0.5;
+    color: #101010;
     border: none;
     box-shadow: 0px 5px 15px #101010;
 }

@@ -10,24 +10,24 @@ export const Projects = () => {
         <div className ='flex flex-col items-center justify-start'>
             <h1 className={`md:text-[4rem] text-[2rem] md:mb-[100px] my-[50px] tracking-wide ${style.header}`}>Projects</h1>
             {data.map((work) => 
-            <div key={work.id} className={`flex justify-between items-start h-[200px] py-[30px] px-[50px] w-[90%] ${style.works}`}>
+            <div key={work.id} className={`flex justify-between items-start h-auto md:h-[200px] py-[10px] md:py-[30px] md:px-[50px] px-[20px] w-[90%] ${style.works}`}>
                 <div className ='flex flex-col items-start gap-[30px]'>
-                    <h2 className={`text-[1.5rem] md:text-[3rem] ${style.text}`}>{work.title}</h2>
-                    <p className={style.text}>{work.text}</p>
+                    <h2 className={`text-[1.3rem] md:text-[3rem] ${style.text}`}>{work.title}</h2>
+                    <p className={`text-[0.8rem] md:text-[1.5rem] w-[80%] md:w-[100%] ${style.text}`}>{work.text}</p>
                 </div>
                 <div className ='flex flex-col items-end gap-[30px]'>
-                    <h3 className={`text-[1.5rem] ${style.text}`}>{work.framework}</h3>
+                    <h3 className={`text-[1rem] md:text-[1.5rem] ${style.text}`}>{work.framework}</h3>
                     <div className ='flex items-center gap-[20px]'>
                         <a href={work.gitgubLink} target='_blank'>
                             <div className ='flex flex-col items-center gap-[10px]'>
-                                <BsGithub className='text-[1.5rem]'/>
-                                <p className={style.text}>Code</p>
+                                <BsGithub className='text-[0.7rem] md:text-[1.5rem]'/>
+                                <p className={`text-[0.7rem] md:text-[1.5rem] ${style.text}`}>Code</p>
                             </div>
                         </a>
                         <a href={work.projectUrl}>
                             <div className ='flex flex-col items-center gap-[10px]'>
-                                <BsArrowUpRight className='text-[1.5rem]'/>
-                                <p className={style.text}>Live</p>
+                                <BsArrowUpRight className='text-[0.7rem] md:text-[1.5rem]'/>
+                                <p className={`text-[0.7rem] md:text-[1.5rem] ${style.text}`}>Live</p>
                             </div>
                         </a>
                     </div>
